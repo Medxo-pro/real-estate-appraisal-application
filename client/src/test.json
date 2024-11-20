@@ -1,0 +1,27 @@
+{
+  "counties": [
+    ["Shiawassee County, Michigan", "81.5", "Michigan", "Shiawassee County"],
+    ["Wayne County, Michigan", "90.2", "Michigan", "Wayne County"],
+    ["Oakland County, Michigan", "86.3", "Michigan", "Oakland County"],
+    ["Kent County, Michigan", "84.7", "Michigan", "Kent County"],
+    ["Los Angeles County, California", "92.4", "California", "Los Angeles County"],
+    ["San Diego County, California", "88.9", "California", "San Diego County"],
+    ["Cook County, Illinois", "87.1", "Illinois", "Cook County"],
+    ["DuPage County, Illinois", "89.7", "Illinois", "DuPage County"],
+    ["Harris County, Texas", "85.2", "Texas", "Harris County"],
+    ["Dallas County, Texas", "84.9", "Texas", "Dallas County"],
+    ["Clark County, Nevada", "83.6", "Nevada", "Clark County"],
+    ["Maricopa County, Arizona", "89.3", "Arizona", "Maricopa County"],
+    ["King County, Washington", "91.2", "Washington", "King County"],
+    ["Multnomah County, Oregon", "86.8", "Oregon", "Multnomah County"],
+    ["Miami-Dade County, Florida", "82.7", "Florida", "Miami-Dade County"],
+    ["Orange County, Florida", "83.4", "Florida", "Orange County"],
+    ["Fulton County, Georgia", "85.6", "Georgia", "Fulton County"],
+    ["Jefferson County, Kentucky", "81.9", "Kentucky", "Jefferson County"],
+    ["Franklin County, Ohio", "84.5", "Ohio", "Franklin County"],
+    ["Bexar County, Texas", "82.3", "Texas", "Bexar County"],
+    ["Fairfax County, Virginia", "91.0", "Virginia", "Fairfax County"],
+    ["Hennepin County, Minnesota", "88.5", "Minnesota", "Hennepin County"],
+    ["Salt Lake County, Utah", "87.1", "Utah", "Salt Lake County"]
+  ]
+}

@@ -1,0 +1,46 @@
+.home-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ff;
+    margin: 100px;
+    border: 1px solid #1F1A38;
+    border-radius: 5px;
+  }
+  
+  .home-message-container p {
+    color: #004d99; /* Darker blue for emphasis */
+    font-weight: bold;
+  }
+  
+  /* Media Queries for Smaller Screens */
+  @media (max-width: 800px) {
+    .home-message-container {
+      margin: 0;
+      margin-top: 20px;
+    }
+  
+    .home-message-container p {
+      font-size: 17px;
+    }
+  }
+  
+  /* Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    .home-message-container {
+      background-color: #2a2a2a;
+      border-color: #4b4b4b;
+      color: #d1c4e9; /* This line was moved inside */
+    }
+
+    .home-message-container p {
+      color: #d1c4e9; 
+    }
+  }
+  

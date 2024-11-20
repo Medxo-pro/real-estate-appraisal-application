@@ -1,0 +1,243 @@
+/* Universal styles for the entire mock */
+:root {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  cursor: auto;
+
+  color-scheme: light dark;
+  background-color: #f5f5f5;
+  color:#1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/** Style to scrollbar (only on google chrome and other webkits) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; 
+  background-color: #c0c0c0;
+}
+::-webkit-scrollbar-corner {
+  visibility: visible;
+  border-radius: 5px; 
+  background-color: #c0c0c0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: clamp(20px, 6vw + 10px, 36px);;
+  line-height: 1.1;
+}
+
+button {
+  background-color: #7ad6fd;
+  border-color: #4689cd;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.4em 0.7em;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: border-color 0.25s;
+  margin-bottom: 5px;
+  transition: background-color 0.1s ease, transform 0.15s ease;
+}
+
+button:hover {
+  transform: scale(1.05);   
+  color: #ffffff;
+  border-color: rgb(55, 116, 177);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  transform: scale(1.05);   
+
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: cell;
+}
+
+td, th {
+  border: 1px solid #1F1A38;
+  padding: 10px; 
+  text-align: center;
+  font-size: 16px;
+  min-height: 30px;
+  background-color: #ffffff; 
+}
+
+th {
+  background-color: #1F1A38;  /* Blue background for headers */
+  color: #ffffff;  /* White text for headers */
+}
+
+td {
+  background-color: #f0f8ff;  /* Very light blue for table cells */
+}
+
+table tr:nth-child(even) td {
+  background-color: #e6f0ff;  /* Slightly darker light blue for alternating rows */
+}
+
+table tr:hover td {
+  background-color: #d6e4f7;  /* Hover effect for rows */
+}
+
+.dropdown {
+  margin-right: 0.5em; 
+  border-radius: 4px;
+  padding: 5px;
+  padding-bottom: -3px;
+  font-size: 14px; 
+  margin: 0 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 3px solid #0066cc;
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.dropdown option {
+  padding: 5px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.dropdown:hover, .dropdown:focus {
+  border-bottom: 5px solid #0066cc;
+}
+
+.text-box {
+  padding: 5px;
+  border: 2px solid #abababfd;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+/* Media Queries for Screen Sizing Adaptation */
+/* Global Styles for Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #181818;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #9c27b0;
+  }
+
+  a:hover {
+    color: #7b1fa2; 
+  }
+
+  /* Buttons */
+  button {
+    border-color: #5c5c5c; 
+    background-color: #512da8; 
+    color: white;
+  }
+
+  button:hover {
+    border-color: #5c5c5c; 
+    background-color: #7b1fa2; 
+  }
+
+  .text-box {
+    background-color: #2a2a2a;
+    border: 1px solid #4b4b4b; 
+    color: #e0e0e0;
+  }
+
+  /* Tables */
+  table {
+    border-color: #5c5c5c; 
+    color: #e0e0e0;
+  }
+
+  td,
+  th {
+    background-color: #261a48;
+  }
+
+  th {
+    background-color: #534281;
+  }
+
+  table tr:nth-child(even) td {
+    background-color: #1e0c29;
+  }
+
+  table tr:hover td {
+    background-color: #512da8;
+  }
+  
+  .dropdown {
+    background-color: #181818; 
+    border-color: #7b42ca; 
+    color: #e0e0e0; 
+  }
+  .dropdown:focus, .dropdown:hover{
+    border-color: #7b1fa2; 
+  }
+}
+
+@media (max-width: 800px) {
+  .button {
+    margin: 0px 0px; 
+  }
+
+  .text-box {
+    height: 20px;
+    width: 200px;
+    border: 2px solid #abababfd;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 16px;
+  }
+  
+  .dropdown:hover {
+    border-bottom: 3px solid #0066cc;
+  }
+
+  .dropdown:focus {
+    border-bottom: 3px solid #0066cc;
+  }   
+
+  table {
+    width: 100%;
+    font-size: 14px; 
+  }
+  td, th {
+    padding: 8px;
+  }
+  .message-container {
+    max-width: 90%; 
+    padding: 10px; 
+  }
+}

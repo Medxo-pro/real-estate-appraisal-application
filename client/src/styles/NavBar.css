@@ -1,0 +1,115 @@
+.nav-bar {
+  background-image: linear-gradient(45deg, rgb(39, 158, 226), rgba(0, 153, 255, 1), rgba(0, 102, 204, 1));
+  background-size: 300% 300%;
+  animation: rainbowBackground 6s infinite;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between; /* Align title left and links right */
+  align-items: center;
+  font-weight: 500;
+  color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 5vh;
+  flex-wrap: nowrap;
+}
+
+.menu-button {
+  display: none;
+}
+
+.loading-button {
+    background-color: rgba(255, 255, 255, 0.457);
+    border-color:rgba(255, 255, 255, 0.457);
+}
+
+.title {
+    margin-left: 1rem;
+}
+  
+.links {
+  display: flex;
+  align-items: center;
+}
+  
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-right: 1rem;
+}
+  
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: clamp(20px, 2.5vw, 20px);
+}
+  
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+@keyframes rainbowBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .nav-bar {
+    background-image: linear-gradient(45deg, #3c2f61, #5e35b1, #9c27b0);
+  }
+}
+  
+/* Media Queries for Smaller Screens */
+@media (max-width: 900px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    height: 20vh;
+    margin-bottom: 2px;
+  }
+    
+  .links {
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: -20px;
+  }
+
+  .nav-links {
+    width: 100%;
+    padding: 0px;
+    padding-top: 8px;
+    margin: 0px;
+  }
+  
+  .nav-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-links li a {
+    padding: 5px 10px;
+  }
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 470px) { 
+  .links {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -20px;
+    display: flex;
+  }
+
+  .nav-links {
+    margin-bottom: -12px;
+  }
+
+}
